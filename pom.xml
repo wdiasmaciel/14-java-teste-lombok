@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Informações do projeto -->
-    <groupId>com.example</groupId>
+    <groupId>com.exemplo</groupId>
     <artifactId>lombok-project</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Exemplo Projeto Lombok</name>
@@ -23,7 +23,7 @@
     <!-- Build Configuration -->
     <build>
         <plugins>
-            <!-- Plugin para processar anotações do Lombok -->
+            <!-- Plugin para compilar o código -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -31,13 +31,20 @@
                 <configuration>
                     <source>17</source>
                     <target>17</target>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>1.18.26</version>
-                        </path>
-                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+
+            <!-- Plugin para criar o JAR executável -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.exemplo.Main</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
             </plugin>
         </plugins>
