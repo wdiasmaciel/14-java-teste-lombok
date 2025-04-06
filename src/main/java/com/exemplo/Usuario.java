@@ -1,6 +1,10 @@
 package com.exemplo;
 
 import lombok.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import java.util.Date; // ou java.time.LocalDate
 
 @Entity
 @NoArgsConstructor @Getter @Setter
