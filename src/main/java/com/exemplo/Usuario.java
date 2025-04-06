@@ -7,15 +7,15 @@ import jakarta.persistence.GeneratedValue;
 import java.util.Date; // ou java.time.LocalDate
 
 @Entity
-@NoArgsConstructor @Getter @Setter
+@NoArgsConstructor
 public class Usuario {
     @Id @GeneratedValue
-    private Long id; 
-    private String nome;
-    private String sobrenome;
-    private String email;
-    private Date idade;
-    private String genero;
+    @Getter private Long id; 
+    @Getter @Setter private String nome;
+    @Getter @Setter private String sobrenome;
+    @Getter @Setter private String email;
+    @Getter @Setter private Date idade;
+    @Getter @Setter private String genero;
  
     public Usuario(String nome, String sobrenome, String email, Date idade, String genero) {
         this.nome = nome;
