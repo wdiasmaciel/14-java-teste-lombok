@@ -3,7 +3,7 @@
 # Visual Studio Code no Codespaces do GitHub
 Instalar a extensão `Lombok Annotations Support for VS Code` para garantir que as `anotações` do `Lombok` sejam reconhecidas.
 
-![alt text](image.png)
+![Extensão "Lombok Annotations Support for VS Code" para garantir que as anotações do Lombok sejam reconhecidas.](extensaoLombokVSCode.png)
 
 # Executar os comandos:
 ```
