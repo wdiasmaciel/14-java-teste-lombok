@@ -29,7 +29,7 @@ git push
 ## OBS: 
 # Copiar o conteúdo de um repositório para outro:
 
-* Passo 1 -> Clonar com --mirror o repositório antigo:
+* Passo 1 -> Clonar com ``--mirror`` o repositório antigo:
 ```
 git clone --mirror https://github.com/<usuário no GitHub>/<nome do repositório>
 ```
