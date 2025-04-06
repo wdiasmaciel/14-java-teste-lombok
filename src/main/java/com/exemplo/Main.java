@@ -11,6 +11,7 @@ public class Main {
         System.out.println("Usuário(a): " + usuario.getNome());
         
         usuario = new Usuario(
+            1L, // Representação do 1 com tipo Long em Java
             "Diana",
             "Silva",
             "ana.silva@example.com",

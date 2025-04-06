@@ -7,8 +7,8 @@ import jakarta.persistence.GeneratedValue;
 import java.util.Date; // ou java.time.LocalDate
 
 @Entity
-@NoArgsConstructor
-public class Usuario {
+@NoArgsConstructor @AllArgsConstructor
+public class Usuario { 
     @Id @GeneratedValue
     @Getter private Long id; 
     @Getter @Setter private String nome;
@@ -16,12 +16,4 @@ public class Usuario {
     @Getter @Setter private String email;
     @Getter @Setter private Date idade;
     @Getter @Setter private String genero;
- 
-    public Usuario(String nome, String sobrenome, String email, Date idade, String genero) {
-        this.nome = nome;
-        this.sobrenome = sobrenome;
-        this.email = email;
-        this.idade = idade;
-        this.genero = genero;
-    }
  }
