@@ -2,6 +2,7 @@ package com.exemplo;
 
 import lombok.*;
 
+@Entity
 @NoArgsConstructor @Getter @Setter
 public class Usuario {
     @Id @GeneratedValue
