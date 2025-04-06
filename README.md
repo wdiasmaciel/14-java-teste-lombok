@@ -13,3 +13,9 @@ mvn clean install
 ```
 java -jar target/lombok-project-1.0-SNAPSHOT.jar
 ```
+
+```
+git add .
+git commit -m "Projeto com Lombok"
+git push
+```
