@@ -46,7 +46,7 @@ cd <nome da pasta do diretório clonado>
 https://github.com/new
 ```
 **OBS**: não marcar as opções de ``README``, ``.gitignore`` ou ``licença``.
-<br/>
+<br/><br/>
 
 * Passo 4 -> Fazer o push com ``--mirror`` para o novo repositório:
 ```
