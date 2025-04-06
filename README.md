@@ -43,15 +43,15 @@ cd <nome da pasta do diretório clonado>
 ```
 https://github.com/new
 ```
-**OBS**: não marcar as opções de README, .gitignore ou licença.
+**OBS**: não marcar as opções de ``README``, ``.gitignore`` ou ``licença``.
 
-* Passo 4 -> Fazer o push com --mirror para o novo repositório:
+* Passo 4 -> Fazer o push com ``--mirror`` para o novo repositório:
 ```
 git push --mirror https://github.com/<usuário no GitHub>/<nome do novo repositório>
 ```
 
 **Exemplo**:
-* Passo 1 -> Clonar com --mirror o repositório antigo:
+* Passo 1 -> Clonar com ``--mirror`` o repositório antigo:
 ```
 git clone --mirror https://github.com/wdiasmaciel/01-java-teste-lombok.git
 ```
@@ -65,9 +65,9 @@ cd 01-java-teste-lombok.git
 ```
 https://github.com/new
 ```
-**OBS**: não marcar as opções de README, .gitignore ou licença.
+**OBS**: não marcar as opções de ``README``, ``.gitignore`` ou ``licença``.
 
-* Passo 4 -> Fazer o push com --mirror para o novo repositório:
+* Passo 4 -> Fazer o push com ``--mirror`` para o novo repositório:
 ```
 git push --mirror https://github.com/wdiasmaciel/02-java-teste-lombok.git
 ```
