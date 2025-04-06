@@ -8,7 +8,7 @@ public class Main {
 
         usuario = new Usuario();
         usuario.setNome("Ana");
-        System.out.println("Usuário criado: " + usuario.getNome());
+        System.out.println("Usuário: " + usuario.getNome());
         
         usuario = new Usuario(
             "Diana",
@@ -17,6 +17,6 @@ public class Main {
             new Date(),
             "Feminino"
         );
-        System.out.println("Usuário criado: " + usuario.getNome());
+        System.out.println("Usuário: " + usuario.getNome());
     }
 }
