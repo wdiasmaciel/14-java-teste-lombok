@@ -9,7 +9,7 @@ import java.util.Date; // ou java.time.LocalDate
 @Entity
 @NoArgsConstructor @AllArgsConstructor
 @ToString
-@EqualsAndHashCode(exclude={"nome", "sobrenome", "genero"})
+@EqualsAndHashCode(of={"id", "email", "idade"})
 public class Usuario { 
     @Id @GeneratedValue
     @Getter private Long id; 
