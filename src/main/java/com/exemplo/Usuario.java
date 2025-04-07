@@ -7,8 +7,8 @@ import jakarta.persistence.GeneratedValue;
 import java.util.Date; // ou java.time.LocalDate
 
 @Entity
-@NoArgsConstructor @AllArgsConstructor
-@Data
+@ToString
+@Builder
 public class Usuario { 
     @Id @GeneratedValue
     private Long id; 

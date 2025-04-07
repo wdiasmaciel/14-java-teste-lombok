@@ -6,17 +6,16 @@ public class Main {
     public static void main(String[] args) {
         Usuario usuario1, usuario2;
 
-        usuario1 = new Usuario();
-        usuario1.setNome("Ana");
+        usuario1 = Usuario.builder().nome("Ana").build();
         System.out.println("Usuário(a): " + usuario1.toString());
 
-        usuario2 = new Usuario(
-                1L, // Representação do 1 com tipo Long em Java.
-                "Diana",
-                "Silva",
-                "ana.silva@example.com",
-                new Date(),
-                "Feminino");
+        usuario2 = Usuario.builder()
+                .nome("Diana")
+                .sobrenome("Silva")
+                .email("ana.silva@example.com")
+                .idade(new Date())
+                .genero("Feminino")
+                .build();
         System.out.println("Usuário(a): " + usuario2.toString());
 
         if (usuario1.equals(usuario1))
