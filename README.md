@@ -9,6 +9,7 @@ Instalar a extensão `Lombok Annotations Support for VS Code` para garantir que 
 ```
 sdk list java
 sdk install java 21.0.6-amzn
+sdk default java 21.0.6-amzn
 ```
 
 ```
