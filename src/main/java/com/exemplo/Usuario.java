@@ -7,6 +7,7 @@ import jakarta.persistence.GeneratedValue;
 import java.util.Date; // ou java.time.LocalDate
 
 @Entity
+@Getter
 @ToString
 @Builder
 public class Usuario { 
