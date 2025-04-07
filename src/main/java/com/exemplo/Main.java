@@ -8,7 +8,7 @@ public class Main {
 
         usuario = new Usuario();
         usuario.setNome("Ana");
-        System.out.println("Usuário(a): " + usuario.getNome());
+        System.out.println("Usuário(a): " + usuario.toString());
         
         usuario = new Usuario(
             1L, // Representação do 1 com tipo Long em Java
@@ -18,6 +18,6 @@ public class Main {
             new Date(),
             "Feminino"
         );
-        System.out.println("Usuário(a): " + usuario.getNome());
+        System.out.println("Usuário(a): " + usuario.toString());
     }
 }
