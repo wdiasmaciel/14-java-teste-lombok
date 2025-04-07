@@ -8,7 +8,7 @@ import java.util.Date; // ou java.time.LocalDate
 
 @Entity
 @NoArgsConstructor @AllArgsConstructor
-@ToString(exclude="id")
+@ToString(exclude={"id", "email", "idade"})
 public class Usuario { 
     @Id @GeneratedValue
     @Getter private Long id; 
