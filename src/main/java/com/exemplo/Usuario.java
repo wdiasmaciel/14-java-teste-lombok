@@ -8,7 +8,8 @@ import java.util.Date; // ou java.time.LocalDate
 
 @Entity
 @NoArgsConstructor @AllArgsConstructor
-@ToString(of={"nome", "sobrenome"})
+@ToString
+@EqualsAndHashCode
 public class Usuario { 
     @Id @GeneratedValue
     @Getter private Long id; 
