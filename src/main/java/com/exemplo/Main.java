@@ -5,7 +5,7 @@ import java.util.Date;
 public class Main {
     public static void main(String[] args) {
         Usuario usuario1, usuario2;
-
+        
         usuario1 = Usuario.builder().nome("Ana").build();
         System.out.println("Usuário(a): " + usuario1.toString());
 
