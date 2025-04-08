@@ -9,6 +9,7 @@ import java.util.Date; // ou java.time.LocalDate
 @Entity
 @Getter 
 @ToString
+@Slf4j
 @Builder
 public class Usuario { 
     @Id @GeneratedValue
