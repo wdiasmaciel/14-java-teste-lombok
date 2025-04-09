@@ -4,28 +4,20 @@ import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
-        Usuario usuario1, usuario2;
-        
-        usuario1 = Usuario.builder().nome("Ana").build();
-        System.out.println("Usuário(a) " + usuario1.getNome() + ": " + usuario1.toString());
-
-        usuario2 = Usuario.builder()
-                .nome("Diana")
+        // Criar um objeto Usuario usando o Builder:
+        Usuario usuario = Usuario.builder()
+                .id(1L)
+                .nome("Ana")
                 .sobrenome("Silva")
-                .email("ana.silva@example.com")
-                .idade(new Date())
+                .email("ana.silva@exemplo.com")
+                .idade(null) // Simulando valor nulo para gerar o log de aviso.
                 .genero("Feminino")
                 .build();
-        System.out.println("Usuário(a) " + usuario2.getNome() + ": " + usuario2.toString());
 
-        if (usuario1.equals(usuario1))
-            System.out.println("O objeto \'usuario1\' é igual a si próprio!");
-        if (usuario2.equals(usuario2))
-            System.out.println("O objeto \'usuario2\' é igual a si próprio!");
-        if (!usuario1.equals(usuario2))
-            System.out.println("Os objetos \'usuario1\' e \'usuario2\' são diferentes!");
+        // Exibir as informações do usuário com logs:
+        usuario.exibirUsuario();
 
-        System.out.println("Hash code do objeto \'usuario1\': " + usuario1.hashCode());
-        System.out.println("Hash code do objeto \'usuario2\': " + usuario2.hashCode());
+        // Salvar usuário e registrar logs:
+        usuario.salvarUsuario();
     }
 }
