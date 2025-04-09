@@ -1,6 +1,8 @@
 package com.exemplo;
 
 import lombok.*;
+import lombok.extern.slf4j.Slf4j;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
@@ -9,8 +11,8 @@ import java.util.Date; // ou java.time.LocalDate
 @Entity
 @Getter
 @ToString
-@Slf4j
 @Builder
+@Slf4j
 public class Usuario {
     @Id @GeneratedValue
     private Long id;
@@ -34,11 +36,12 @@ public class Usuario {
         try {
             log.debug("Iniciando processo de salvamento do usuário...");
 
-            // Operação de salvamento do usuário.
-            
-            log.info("Usuário '{}' salvo com sucesso!", nome);
+            // Simulando operação de salvamento do usuário com erro.
+            throw new Exception("Simulação: operação de salvamento do usuário com erro.");
+
+            //log.info("Usuário '{}' salvo com sucesso!", nome);
         } catch (Exception e) {
-            log.error("Erro ao salvar o usuário {}: {} \n{}", nome, e.getMessage(), e);
+            log.error("Erro ao salvar o usuário {}: {}", nome, e.getMessage(), e);
         }
     }
 }
